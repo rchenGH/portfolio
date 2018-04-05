@@ -1,0 +1,136 @@
+NavigationBar {
+  z-index: 3
+}
+
+
+/* EXPANDED NAVIGATION BAR START */
+.logo-expanded{
+  height: 50px;
+  width: auto;
+}
+
+.navigation-expanded{
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  height: 50px;
+  padding-top: 10px;
+}
+
+.navigation-expanded-list a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.navigation-expanded-list-item{
+  display: inline;
+  margin-right: 10px;
+  float: right;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 10px;
+  font-weight: lighter;
+}
+
+
+/* EXPANDED NAVIGATION BAR END */
+
+
+/* COLLAPSED NAVIGATION BAR START */
+
+.logo-collapsed{
+  height: 40px;
+  width: auto;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.navigation-collapsed{
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+
+.navigation-menu{
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+
+
+
+.navigation-collapsed-list{
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
+.navigation-collapsed-list a{
+  text-decoration: none;
+  z-index: 3 !important;
+}
+
+.navigation-button{
+  border: 1px rgba(255 ,255 ,255 ,1) solid;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 1);
+  float: right;
+  padding: 10px;
+  margin: 15px 15px 10px 20px;
+}
+
+.navigation-collapsed-list-item{
+  margin-top: 10px;
+  height: 30px;
+  padding: 10px;
+  vertical-align: middle;
+  color: white;
+  padding-bottom: 0px;
+  letter-spacing: 2px;
+  z-index: 3 !important;
+}
+
+.navigation-collapsed-list-item a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation-collapsed-list a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.navigation-collapsed-list a:active li,
+.navigation-expanded-list a:active li{
+  background-color: rgba(100, 100, 255, 0.3);
+}
+
+.navigation-collapsed-list-item{
+  text-decoration: none;
+}
+
+#root > div > div > div > nav.navigation-collapsed > div > ul{
+  z-index: 100 !important;
+}
+
+/* COLLAPSED NAVIGATION BAR END */
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+  .navigation-expanded{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navigation-collapsed{
+    display: none;
+
+  }
+}

@@ -1,0 +1,8 @@
+.home-page{
+  position: relative;
+  z-index: 0 !important;
+}
+
+.home-page .container, .home-page .row, .home-page h1{
+  z-index: 0 !important;
+}
