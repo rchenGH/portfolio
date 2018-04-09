@@ -8,14 +8,14 @@ import Projects from './components/PortfolioIndex/PortfolioIndex'
 import Contact from './components/contact/Contact'
 import Background from './components/background/background.css'
 
+
 class App extends Component {
 
-
-  render() {
-
+    render() {
 
 
     return (
+
       <Router>
 
         <div className="App portfolio-background">

@@ -79,7 +79,7 @@ class NavigationBar extends Component {
 
           <nav className="navigation-collapsed">
             <Link to="/home">
-              <img src={logo} class="logo-collapsed"/>
+              <img src={logo} className="logo-collapsed"/>
             </Link>
             <button className="navigation-button" onClick={this.showMenu}>
               MENU
