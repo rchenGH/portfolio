@@ -1,0 +1,48 @@
+.sidebar-container{
+  height: 160px;
+  margin-top: 75px;
+  width: 60px;
+  margin-left: 30px;
+}
+
+.sidebar-row{
+  height: 50px;
+  width: 50px;
+  border: 1px rgba(255, 255, 255, 1) solid;
+  margin-top: 5px;
+  padding-top: 2.5px;
+}
+
+.icon-box{
+  text-align: center;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon-box img{
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+
+.icon-box:hover{
+  text-decoration: none;
+  animation-name: icon-box;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 0.5s;
+}
+
+.icon-box:active{
+  background-color: rgba(255,255,255,1)
+}
+
+@keyframes icon-box {
+  0% {background:  rgba(0, 0, 0,0.0)}
+  100% {background:  rgba(100, 100, 255, 1) }
+}

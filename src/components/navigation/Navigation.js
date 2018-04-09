@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import NavStyle from './navigation.css'
+import './navigation.css'
 import {
   Link,
 } from 'react-router-dom'
@@ -46,7 +46,9 @@ class NavigationBar extends Component {
         <div>
           <nav className="navigation-expanded">
             <ul className="navigation-expanded-list">
-              <img src={logo} class="logo-expanded"/>
+              <Link to="/home">
+                <img src={logo} className="logo-expanded"/>
+              </Link>
               <Link to="/contact">
                 <li className="navigation-expanded-list-item">
                   CONTACT
@@ -76,7 +78,9 @@ class NavigationBar extends Component {
           </nav>
 
           <nav className="navigation-collapsed">
-            <img src={logo} class="logo-collapsed"/>
+            <Link to="/home">
+              <img src={logo} class="logo-collapsed"/>
+            </Link>
             <button className="navigation-button" onClick={this.showMenu}>
               MENU
             </button>

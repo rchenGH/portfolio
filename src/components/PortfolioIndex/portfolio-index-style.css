@@ -1,7 +1,56 @@
 .projects-page{
-  position: relative;
+  padding-right: 50px;
 }
 
-.projects-page h1{
+.project-item .project-row{
+  max-width: 80%;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.projects-hr{
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: none;
+}
+
+.project-header{
+  color: rgba(255,255,255, 1);
+  letter-spacing: 5px;
+  font-size: 40px;
+  padding-top: 30px;
   text-align: center;
+  font-weight: 500
+}
+
+.project-description{
+  background-color: rgba(10,10,50,0.5);
+  width: 100%;
+  height: auto;
+  min-width: 350px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 3px;
+}
+
+
+
+.project-image{
+  margin: 0px;
+  padding: 0px;
+}
+
+.project-image .description{
+  padding: 5px;
+  margin-bottom: -2px;
+}
+
+.project-video{
+  width: 100%;
+  height: auto;
+  min-width: 350px;
 }

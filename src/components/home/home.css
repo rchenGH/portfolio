@@ -1,8 +1,26 @@
-.home-page{
-  position: relative;
-  z-index: 0 !important;
+.name{
+  color: rgba(255,255,255, 1);
+  letter-spacing: 5px;
+  font-size: 60px;
 }
 
-.home-page .container, .home-page .row, .home-page h1{
-  z-index: 0 !important;
+.dev{
+  color: rgba(255,255,255,1);
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+
+.technologies{
+  margin-top: 50px;
+  color: rgba(255,255,255,1);
+  letter-spacing: 4px;
+  border-left: 1px rgba(255,255,255,1) solid;
+  padding-left: 10px;
+  height: auto;
+}
+
+.tech-names{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 300;
 }

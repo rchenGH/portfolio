@@ -1,9 +1,13 @@
 .portfolio-background{
   background-image: url("./coding-background.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
-  z-index: -100;
+}
 
+.wave{
+  background-image: url("./overlay2.png");
+  min-height: 100vh;
+  background-size: cover;
 }
 
 .gradient-overlay{
