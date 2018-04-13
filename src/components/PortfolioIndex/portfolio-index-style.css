@@ -159,6 +159,11 @@
   font-size: 16px;
 }
 
+.list-hr{
+  margin-bottom: 40px;
+  border: 1px rgba(255,255,255, 0.3) solid;
+}
+
 @media only screen and (max-width: 768px) {
 
   .button-box button{

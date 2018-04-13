@@ -1,3 +1,7 @@
+.home-page{
+  margin-bottom: 50px;
+}
+
 .name{
   color: rgba(255,255,255, 1);
   letter-spacing: 5px;
@@ -58,4 +62,14 @@
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  .technologies{
+    margin-top: 20px;
+  }
+
+  .tech-names{
+    padding: 0;
+  }
 }

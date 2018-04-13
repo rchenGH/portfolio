@@ -69,6 +69,9 @@ render(){
 
 
   return (
+    <div>
+
+
     <li className="project-item container">
       <div className="row project-row">
         <div className="column-6 project-image">
@@ -131,6 +134,8 @@ render(){
         </div>
       </div>
     </li>
+    <hr className="list-hr" />
+  </div>
   )
 
 

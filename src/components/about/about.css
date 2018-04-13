@@ -25,9 +25,8 @@
   font-size: 18px;
   letter-spacing: 2px;
   color: rgba(255,255,255,1);
-  font-weight: 100;
+  font-weight: 300;
   max-width: 700px;
-  padding-top: 30px;
   padding-left: 3%;
   padding-right: 3%;
   animation-name: about-text;
@@ -48,4 +47,11 @@
   margin-top: 50px;
   margin-bottom: 50px;
   border: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #about-text{
+    font-weight: 300;
+  }
 }
