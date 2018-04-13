@@ -1,0 +1,41 @@
+
+.bottombar-container{
+  position: fixed;
+  bottom : 0px;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 45px;
+}
+
+.bottombar-box:hover{
+  text-decoration: none;
+  animation-name: bottombar-box;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 0.5s;
+}
+
+
+
+.bottombar-box{
+  height: 45px;
+  width: 45px;
+  border-right: 1px rgba(0, 100, 200, 0.5) solid;
+  border-left: 1px rgba(0, 100, 200, 0.5) solid;
+  border-top: 1px rgba(0, 100, 200, 0.5) solid;
+  padding-bottom: 2.5px;
+  text-align: center;
+  background-color: rgba(0, 50, 150, 0.7);
+}
+
+@keyframes bottombar-box {
+  0% {background:  rgba(0, 50, 150, 0.5)}
+  100% {background:  rgba(25, 20, 100, 1) }
+}
+
+
+@media only screen and (min-width: 830px){
+  .bottombar-container{
+    display: none;
+  }
+}

@@ -13,6 +13,7 @@
   padding-top: 2.5px;
 }
 
+
 .icon-box{
   text-align: center;
   height: 45px;
@@ -45,4 +46,15 @@
 @keyframes icon-box {
   0% {background:  rgba(0, 0, 0,0.0)}
   100% {background:  rgba(100, 100, 255, 1) }
+}
+
+
+@media only screen and (max-width: 830px){
+  .sidebar-container {
+    display:none;
+  }
+  .sidebar-column{
+    display:none;
+  }
+
 }

@@ -12,21 +12,23 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div className="sidebar-container">
-        <div className="row sidebar-row">
-          <Link to="/contact" className="icon-box">
-              <img src={contactIcon}/>
-          </Link>
-        </div>
-        <div className="row sidebar-row">
-          <a href="https://github.com/rchenGH" className="icon-box">
-            <img src={githubIcon}/>
-          </a>
-        </div>
-        <div className="row sidebar-row">
-          <a href="https://www.linkedin.com/in/raymond-chen-50/" className="icon-box">
-            <img src={linkedinIcon}/>
-          </a>
+      <div>
+        <div className="sidebar-container">
+          <div className="row sidebar-row">
+            <Link to="/contact" className="icon-box">
+                <img src={contactIcon}/>
+            </Link>
+          </div>
+          <div className="row sidebar-row">
+            <a href="https://github.com/rchenGH" className="icon-box" target="_blank">
+              <img src={githubIcon}/>
+            </a>
+          </div>
+          <div className="row sidebar-row">
+            <a href="https://www.linkedin.com/in/raymond-chen-50/" className="icon-box" target="_blank">
+              <img src={linkedinIcon}/>
+            </a>
+          </div>
         </div>
       </div>
     );

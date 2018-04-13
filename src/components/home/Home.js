@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import homeStyle from './home.css'
 import Sidebar from '../sidebar/Sidebar'
 
-
 class Home extends Component {
 
   render() {
@@ -10,10 +9,10 @@ class Home extends Component {
       <div className="home-page">
         <div className="container">
           <div className="row">
-            <div className="column-2">
+            <div className="column-2 sidebar-column">
               <Sidebar/>
             </div>
-            <div className="column-10">
+            <div className="column-10 column-body">
               <div className="row">
                 <p className="name">RAYMOND CHEN</p>
               </div>
@@ -22,18 +21,20 @@ class Home extends Component {
               </div>
               <div className="row technologies">
                 <div className="column-12 tech-names">
-                  FRONT-END: HTML5, CSS, JavaScript, jQuery, Ajax, Bootstrap, React.js, React Native
+                  <p>FRONT-END: HTML5, CSS, JavaScript, jQuery, Ajax, Bootstrap, React.js, React Native</p>
                 </div>
                 <div className="column-12 tech-names">
-                  BACK-END: Ruby on Rails, Node.js, Express.js
+                  <p>BACK-END: Ruby on Rails, Node.js, Express.js</p>
                 </div>
                 <div className="column-12 tech-names">
-                  DATABASES: MySQL, PostgreSQL, ActiveRecord
+                  <p>DATABASES: MySQL, PostgreSQL, ActiveRecord</p>
                 </div>
                 <div className="column-12 tech-names">
-                  DEPLOYMENT & DEVELOPMENT: Heroku, GitHub
+                  <p>DEPLOYMENT & DEVELOPMENT: Heroku, GitHub</p>
                 </div>
               </div>
+
+
 
             </div>
 

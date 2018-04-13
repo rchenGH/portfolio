@@ -18,8 +18,6 @@ body {
   margin: 0;
 }
 
-
-
 .column-1{
   display: inline;
   flex: calc((95%/12));
@@ -93,10 +91,18 @@ body {
   padding-right: calc(5%/4);
 }
 
+
+
+
 @media only screen and (max-flex: 768px) {
     /* For mobile phones: */
     [class*="column-"] {
         flex: 100%;
     }
 
+}
+@media only screen and (max-width: 768px) {
+  .column-body{
+    padding-top: 50px;
+  }
 }

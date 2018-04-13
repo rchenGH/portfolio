@@ -10,13 +10,14 @@ class About extends Component {
       <div className="about">
         <div className="container">
           <div className="row">
-            <div className="column-2 sidebar">
+            <div className="column-2 sidebar-column">
               <Sidebar/>
             </div>
-            <div className="column-10">
+            <div className="column-10 column-body">
               <article>
 
                 <h1 className="about-me">ABOUT ME</h1>
+
                 <hr className="about-hr"/>
                 <div className="column-8">
                   <p id="about-text">I am a web developer from Vancouver, BC.

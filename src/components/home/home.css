@@ -2,13 +2,34 @@
   color: rgba(255,255,255, 1);
   letter-spacing: 5px;
   font-size: 60px;
+  animation-name: name-animation;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
 }
+
+
 
 .dev{
   color: rgba(255,255,255,1);
-  letter-spacing: 4px;
+  letter-spacing: 2.5px;
   font-size: 25px;
+  animation-name:dev-animation;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
 }
+
+@keyframes name-animation{
+  0% {transform: translateY(100px);}
+  100% {transform: translate(0px)}
+}
+
+@keyframes dev-animation{
+  0% {transform: translateY(100px);}
+  100% {transform: translate(0px)}
+}
+
 
 .technologies{
   margin-top: 50px;
@@ -18,6 +39,20 @@
   padding-left: 10px;
   height: auto;
 }
+
+.tech-names{
+  letter-spacing: 2.5px;
+  animation-name:tech-animation;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
+}
+
+@keyframes tech-animation{
+  0% {transform: translateX(-300px);}
+  100% {transform: translate(0px)}
+}
+
 
 .tech-names{
   padding-top: 15px;

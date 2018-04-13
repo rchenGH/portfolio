@@ -1,6 +1,4 @@
-.about{
-  padding-right: 50px;
-}
+
 
 .about-me{
   color: rgba(255,255,255, 1);
@@ -8,7 +6,16 @@
   font-size: 40px;
   padding-top: 30px;
   text-align: center;
-  font-weight: 500
+  font-weight: 500;
+  animation-name:about-me;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
+}
+
+@keyframes about-me{
+  0% {transform: translateY(50px);}
+  100% {transform: translate(0px)}
 }
 
 #about-text{
@@ -21,6 +28,17 @@
   font-weight: 100;
   max-width: 700px;
   padding-top: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
+  animation-name: about-text;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
+}
+
+@keyframes about-text{
+  0% {transform: translateX(-100px);}
+  100% {transform: translate(0px)}
 }
 
 .about-hr{

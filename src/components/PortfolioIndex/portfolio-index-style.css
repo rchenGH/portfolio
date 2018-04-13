@@ -1,12 +1,20 @@
-.projects-page{
-  padding-right: 50px;
+
+
+.item-container{
+  padding: 0px;
+  max-width: 1000px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height: 80vh;
 }
 
-.project-item .project-row{
-  max-width: 80%;
+.project-item{
+  padding: 0px;
+}
+
+.project-row{
+  max-width: 100%;
   margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .projects-hr{
@@ -16,6 +24,8 @@
   margin-top: 50px;
   margin-bottom: 50px;
   border: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .project-header{
@@ -24,25 +34,45 @@
   font-size: 40px;
   padding-top: 30px;
   text-align: center;
-  font-weight: 500
+  font-weight: 500;
+  animation-name:portfolio-header;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
+}
+
+@keyframes portfolio-header{
+  0% {transform: translateY(50px);}
+  100% {transform: translate(0px)}
+}
+
+.project-name{
+  color: rgba(255,255,255, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .project-description{
   background-color: rgba(10,10,50,0.5);
   width: 100%;
+  min-width: 300px;
   height: auto;
-  min-width: 350px;
   padding: 0px;
   margin: 0px;
   margin-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
-
 
 .project-image{
   margin: 0px;
   padding: 0px;
+  min-width: 300px;
 }
+
 
 .project-image .description{
   padding: 5px;
@@ -52,5 +82,117 @@
 .project-video{
   width: 100%;
   height: auto;
-  min-width: 350px;
+  min-width: 300px;
+}
+
+.button-container{
+  height: 100%;
+}
+
+.button-row{
+  height: 100%;
+}
+
+.button-column{
+  height: 100%;
+}
+
+.button-box{
+  height: calc(100%/3);
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+
+  align-items: center;
+}
+
+.button-box button{
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  height: 60px;
+  margin: 0px;
+  background-color: rgba(0,0,0,0);
+}
+
+.button-pic{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  height: 35px;
+  width: 35px;
+}
+
+
+.info-container{
+  height: 85%;
+}
+
+.info-row{
+  height: 80%;
+  width: 90%;
+  margin-right: 7.5%;
+  margin-left: 1%;
+  margin-top: 7.5%;
+  margin-bottom: 2.5%
+}
+
+.info-column{
+  border: 1px rgba(255,255,255,0.2) solid;
+}
+
+.current-info{
+  color: rgba(255, 255, 255, 1);
+  min-height: 100px;
+  max-height: 175px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .button-box button{
+    width: 50px;
+    height: 50px;
+  }
+  .button-pic{
+    height: 30px;
+    width: 30px;
+    padding-left: 7.5px;
+  }
+
+  .project-video{
+    min-width: 250px;
+  }
+
+  .project-description{
+    background-color: rgba(10,10,50,0.5);
+    height: auto;
+    min-width: 250px;
+  }
+
+
+
+
+  .project-item .project-row{
+    max-width: 100%;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .current-info{
+    font-size: 14px;
+  }
+
 }

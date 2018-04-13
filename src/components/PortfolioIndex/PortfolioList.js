@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PortfolioItem from './PortfolioItem.js'
+import './portfolio-index-style.css'
+
 
 import '../../assets/videos/cbrne-video.m4v'
 import '../../assets/videos/hockey-video.m4v'
@@ -25,9 +27,12 @@ render(){
 
 
     return(
-      <div>
+      <ul className="item-container">
+        <h1 className="project-header">PROJECTS</h1>
+
+        <hr className="projects-hr"/>
         {portfolioItems}
-      </div>
+      </ul>
     )
 
 }

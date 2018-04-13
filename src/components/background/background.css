@@ -2,6 +2,7 @@
   background-image: url("./coding-background.jpg");
   min-height: 100vh;
   background-size: cover;
+  margin-bottom: 45px;
 }
 
 .wave{

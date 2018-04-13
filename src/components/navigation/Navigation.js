@@ -88,9 +88,7 @@ class NavigationBar extends Component {
               this.state.showMenu ?
               (
                 <div className="navigation-menu"
-                  ref={(element) => {
-                    this.dropdownMenu = element;
-                  }}
+                  ref={(element) => {this.dropdownMenu = element;}}
                 >
                   <ul className="navigation-collapsed-list">
 
