@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './contact.css'
+
 import Sidebar from '../sidebar/Sidebar'
+import nameIcon from '../../assets/images/name.png'
+import emailIcon from '../../assets/images/email.png'
+import phoneIcon from '../../assets/images/phone.png'
 
 
 class Contact extends Component {
@@ -13,17 +17,39 @@ class Contact extends Component {
             <div className="column-2 sidebar-column">
               <Sidebar/>
             </div>
+
             <div className="column-10 column-body">
               <article>
 
                 <h1 className="contact-header">CONTACT</h1>
 
                 <hr className="contact-hr"/>
-                <div className="column-8">
-                  <p id="contact-text">Raymond Chen</p>
-                  <p id="contact-text">Mobile: 778-996-8813</p>
-                  <p id="contact-text">Email: raymondchen86@hotmail.com</p>
+
+
+                <div className="container contact-container">
+                  <table className="contact-table">
+                    <tr className="contact-row">
+                      <td className="contact-icon">
+                        <img src={nameIcon}/>
+                      </td>
+                      <td className="contact-column">Raymond Chen</td>
+                    </tr>
+                    <tr className="contact-row">
+                      <td className="contact-icon">
+                        <img src={phoneIcon}/>
+                      </td>
+                      <td className="contact-column">778-996-8813</td>
+                    </tr>
+                    <tr className="contact-row">
+                      <td className="contact-icon">
+                        <img src={emailIcon}/>
+                      </td>
+                      <td className="contact-column">raymondchen86@hotmail.com</td>
+                    </tr>
+                  </table>
                 </div>
+
+
 
               <br/>
 
