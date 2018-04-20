@@ -1,5 +1,15 @@
 .home-page{
-  margin-bottom: 50px;
+  
+}
+
+.sidebar-column{
+  padding: 0px;
+  z-index: 2;
+}
+
+.column-body{
+  padding: 0px;
+  z-index: 0;
 }
 
 .name{
@@ -53,8 +63,13 @@
 }
 
 @keyframes tech-animation{
-  0% {transform: translateX(-300px);}
-  100% {transform: translate(0px)}
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;}
+
+  100% {
+    transform: translate(0px);
+  }
 }
 
 
