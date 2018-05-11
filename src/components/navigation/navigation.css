@@ -28,6 +28,11 @@
   font-weight: 300;
 }
 
+.navigation-expanded-list-item:hover{
+  color: rgba(50, 100, 200, 1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
 
 /* EXPANDED NAVIGATION BAR END */
 
@@ -101,14 +106,15 @@
   height: 30px;
   padding: 10px;
   vertical-align: middle;
-  color: white;
+  color: rgba(255, 255, 255, 1);
   padding-bottom: 0px;
   letter-spacing: 2px;
-
 }
 
+
+
 .navigation-collapsed-list-item a:link {
-  color: white;
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
 
@@ -120,6 +126,7 @@
 .navigation-collapsed-list a:active li,
 .navigation-expanded-list a:active li{
   background-color: rgba(100, 100, 255, 0.3);
+  color: rgba(255, 255, 255, 1);
 }
 
 .navigation-collapsed-list-item{

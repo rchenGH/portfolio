@@ -36,7 +36,7 @@
   animation-name: icon-box;
   animation-fill-mode: forwards;
   animation-play-state: running;
-  animation-duration: 0.5s;
+  animation-duration: 0.1s;
 }
 
 .icon-box:active{
@@ -44,8 +44,8 @@
 }
 
 @keyframes icon-box {
-  0% {background:  rgba(0, 0, 0,0.0)}
-  100% {background:  rgba(100, 100, 255, 1) }
+  0% {background:  rgba(0, 0, 0,0.0);}
+  100% {background:  rgba(100, 100, 255, 0.5);}
 }
 
 

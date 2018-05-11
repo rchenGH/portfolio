@@ -3,6 +3,7 @@ import projectStyle from './portfolio-index-style.css'
 import cbrneVideo from '../../assets/videos/cbrne-video.m4v'
 import hockeyVideo from '../../assets/videos/hockey-video.m4v'
 import mnsVideo from '../../assets/videos/mns-video.m4v'
+import nexVideo from '../../assets/videos/nexgen-video.m4v'
 
 import './portfolio-index-style.css'
 import codePic from '../../assets/images/code.png'
@@ -53,13 +54,13 @@ class PortfolioItem extends Component{
 render(){
 
   //video iteration below provides links
-  let videos = [cbrneVideo, hockeyVideo, mnsVideo]
+  let videos = [cbrneVideo, hockeyVideo, mnsVideo, nexVideo]
 
   let videoItem;
 
   if(videos){
       videoItem = videos.map( video => {
-        // console.log(video)
+        console.log(video)
         return (
           video
         )

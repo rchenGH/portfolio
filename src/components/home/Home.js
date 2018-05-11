@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import homeStyle from './home.css'
+import './home.css'
 import Sidebar from '../sidebar/Sidebar'
 
 class Home extends Component {
@@ -19,7 +19,9 @@ class Home extends Component {
               <div className="row">
                 <p className="dev">WEB DEVELOPER</p>
               </div>
-              <div className="row technologies">
+
+              <div className="row technologies technologies-border">
+
                 <div className="column-12 tech-names">
                   <p>FRONT-END: HTML5, CSS, JavaScript, jQuery, Ajax, Bootstrap, React.js, React Native</p>
                 </div>

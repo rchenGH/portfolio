@@ -21,8 +21,6 @@ class App extends Component {
   constructor(){
     super();
 
-
-
     this.app = firebase.initializeApp(DB_CONFIG)
     this.database = this.app.database().ref().child('projects')
 
@@ -49,7 +47,6 @@ class App extends Component {
         <div className="App portfolio-background">
           <div className="gradient-overlay">
             <div className="wave">
-
 
               <div className="routes">
                 <NavigationBar/>

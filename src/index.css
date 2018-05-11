@@ -93,7 +93,6 @@ body {
 
 
 
-
 @media only screen and (max-flex: 768px) {
     /* For mobile phones: */
     [class*="column-"] {
