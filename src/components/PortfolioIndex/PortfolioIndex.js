@@ -11,9 +11,6 @@ import Bottombar from '../sidebar/Bottombar'
 class PortfolioIndex extends Component {
 
   render() {
-
-    console.log(this.props.projects)
-
     return (
       <div className="projects-page">
         <div className="container">
@@ -24,7 +21,7 @@ class PortfolioIndex extends Component {
 
             <div className="column-10 project-column column-body">
               <article>
-              
+
                 <PortfolioList projects= {this.props.projects}/>
               </article>
             </div>

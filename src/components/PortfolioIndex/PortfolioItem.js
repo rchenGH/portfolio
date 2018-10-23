@@ -20,10 +20,6 @@ class PortfolioItem extends Component{
     }
   }
 
-  switchInfo(){
-
-  }
-
   closeInfo(e){
     e.preventDefault();
     this.setState({currentInfo: ""})
@@ -56,7 +52,10 @@ render(){
   //video iteration below provides links
   let videos = [cbrneVideo, hockeyVideo, mnsVideo, nexVideo]
 
+
   let videoItem;
+
+  // console.log(videoItem)
 
   if(videos){
       videoItem = videos.map( video => {
@@ -71,8 +70,6 @@ render(){
 
   return (
     <div>
-
-
     <li className="project-item container">
       <div className="row project-row">
         <div className="column-6 project-image">
@@ -108,7 +105,6 @@ render(){
                       <button onClick={(e) => this.showLink(e)}>
                       <img src={linkPic}
                         className='button-pic'
-
                       />
                       </button>
                     </div>

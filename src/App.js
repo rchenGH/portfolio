@@ -39,7 +39,7 @@ class App extends Component {
 
     render() {
 
-      console.log(this.state.projects)
+      // console.log(this.state.projects)
     return (
 
       <Router>
