@@ -6,8 +6,6 @@ import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import PortfolioList from './PortfolioList'
 import Bottombar from '../sidebar/Bottombar'
 
-
-
 class PortfolioIndex extends Component {
 
   render() {
@@ -21,7 +19,6 @@ class PortfolioIndex extends Component {
 
             <div className="column-10 project-column column-body">
               <article>
-
                 <PortfolioList projects= {this.props.projects}/>
               </article>
             </div>

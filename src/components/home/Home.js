@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './home.css'
+import HomeItem from './HomeItem'
 import Sidebar from '../sidebar/Sidebar'
 
 class Home extends Component {
@@ -15,14 +16,11 @@ class Home extends Component {
 
             <div className="column-10 column-body">
               <article>
-                <HomeList home={this.props.home}/>
+                <HomeItem home={this.props.home}/>
               </article>
             </div>
-
           </div>
-
         </div>
-
       </div>
     );
   }

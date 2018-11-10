@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import aboutStyle from './about.css'
+import './about.css'
 import Sidebar from '../sidebar/Sidebar'
 
 
@@ -29,9 +29,6 @@ class About extends Component {
                 </div>
 
               <br/>
-
-
-
               </article>
             </div>
           </div>

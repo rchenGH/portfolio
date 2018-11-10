@@ -15,17 +15,17 @@ class Bottombar extends Component {
       <div className="bottombar-container container">
         <div className='row'>
           <Link to="/contact" className="icon-box column-3 bottombar-box">
-            <img src={contactIcon}/>
+            <img src={contactIcon} alt={"contact icon"}/>
           </Link>
 
 
           <a href="https://github.com/rchenGH" className="icon-box column-3 bottombar-box">
-            <img src={githubIcon}/>
+            <img src={githubIcon} alt={"github icon "}/>
           </a>
 
 
           <a href="https://www.linkedin.com/in/raymond-chen-50/" className="icon-box column-3 bottombar-box">
-            <img src={linkedinIcon}/>
+            <img src={linkedinIcon} alt={"linkedin icon"}/>
           </a>
 
         </div>

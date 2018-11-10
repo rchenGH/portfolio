@@ -28,9 +28,10 @@ class Contact extends Component {
 
                 <div className="container contact-container">
                   <table className="contact-table">
+                  <tbody>
                     <tr className="contact-row">
                       <td className="contact-icon">
-                        <img src={nameIcon}/>
+                        <img src={nameIcon} alt={"contact icon"}/>
                       </td>
                       <td className="contact-column">Raymond Chen</td>
                     </tr>
@@ -46,6 +47,7 @@ class Contact extends Component {
                       </td>
                       <td className="contact-column">raymondchen86@hotmail.com</td>
                     </tr>
+                    </tbody>
                   </table>
                 </div>
 

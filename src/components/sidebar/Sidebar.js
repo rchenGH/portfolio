@@ -16,17 +16,17 @@ class Sidebar extends Component {
         <div className="sidebar-container">
           <div className="row sidebar-row">
             <Link to="/contact" className="icon-box">
-                <img src={contactIcon}/>
+                <img src={contactIcon} alt={"contact icon"}/>
             </Link>
           </div>
           <div className="row sidebar-row">
-            <a href="https://github.com/rchenGH" className="icon-box" target="_blank">
-              <img src={githubIcon}/>
+            <a href="https://github.com/rchenGH" className="icon-box" target="_blank" rel="noopener noreferrer">
+              <img src={githubIcon} alt={"github icon"}/>
             </a>
           </div>
           <div className="row sidebar-row">
-            <a href="https://www.linkedin.com/in/raymond-chen-50/" className="icon-box" target="_blank">
-              <img src={linkedinIcon}/>
+            <a href="https://www.linkedin.com/in/raymond-chen-50/" className="icon-box" target="_blank" rel="noopener noreferrer">
+              <img src={linkedinIcon} alt={"linkedin icon"}/>
             </a>
           </div>
         </div>

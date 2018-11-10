@@ -12,7 +12,6 @@
   animation-duration: 1.5s;
 }
 
-
 .dev{
   color: rgba(255,255,255,1);
   letter-spacing: 2.5px;
@@ -21,6 +20,13 @@
   animation-fill-mode: forwards;
   animation-play-state: running;
   animation-duration: 1.5s;
+}
+
+.home-item-prop{
+  animation-name: home-item-prop-animation;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 2s;
 }
 
 @keyframes name-animation{
@@ -33,6 +39,10 @@
   100% {transform: translate(0px)}
 }
 
+@keyframes home-item-prop-animation{
+  0% {transform: translateY(0px);}
+  100% {transform: translateX(10px);}
+}
 
 .technologies{
   margin-top: 40px;
@@ -68,20 +78,21 @@
   animation-duration: 1.5s;
 }
 
-
 @keyframes tech-animation{
   0% {
     transform: translateX(-300px);
-    opacity: 0;}
+    opacity: 0;
+  }
 
   100% {transform: translate(0px);}
 }
 
 
 .tech-names{
-
   font-weight: 300;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   .technologies{

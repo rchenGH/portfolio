@@ -5,7 +5,6 @@ import './portfolio-index-style.css'
 class PortfolioList extends Component{
 
 render(){
-
   let portfolioItems;
 
   if(this.props.projects){

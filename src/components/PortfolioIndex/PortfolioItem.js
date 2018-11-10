@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import projectStyle from './portfolio-index-style.css'
+import './portfolio-index-style.css'
 import cbrneVideo from '../../assets/videos/cbrne-video.m4v'
 import hockeyVideo from '../../assets/videos/hockey-video.m4v'
 import mnsVideo from '../../assets/videos/mns-video.m4v'
@@ -48,28 +48,12 @@ class PortfolioItem extends Component{
   }
 
 render(){
-
   //video iteration below provides links
   let videos = [cbrneVideo, hockeyVideo, mnsVideo, nexVideo]
 
 
-  let videoItem;
-
-  // console.log(videoItem)
-
-  if(videos){
-      videoItem = videos.map( video => {
-        console.log(video)
-        return (
-          video
-        )
-      })
-    }
-
-
-
   return (
-    <div>
+    <article>
     <li className="project-item container">
       <div className="row project-row">
         <div className="column-6 project-image">
@@ -86,7 +70,6 @@ render(){
                     <button onClick={(e) => this.showDescription(e)}>
                       <img src={descriptionPic}
                         className='button-pic'
-
                       />
                     </button>
                   </div>
@@ -108,8 +91,6 @@ render(){
                       />
                       </button>
                     </div>
-
-
               </div>
               <div className="column-9">
                 <div className="container">
@@ -132,14 +113,9 @@ render(){
       </div>
     </li>
     <hr className="list-hr" />
-  </div>
+  </article>
   )
-
-
-
 }
-
-
 }
 
 export default PortfolioItem;
