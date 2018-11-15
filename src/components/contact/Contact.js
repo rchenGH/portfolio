@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import Form from './form/Form.js'
 import './contact.css'
 
 import Sidebar from '../sidebar/Sidebar'
 import nameIcon from '../../assets/images/name.png'
 import emailIcon from '../../assets/images/email.png'
 import phoneIcon from '../../assets/images/phone.png'
-
 
 class Contact extends Component {
 
@@ -51,11 +51,13 @@ class Contact extends Component {
                   </table>
                 </div>
 
+              {/* <br/>
 
+              <hr className="contact-hr"/>
 
-              <br/>
-
-
+              <article>
+                <Form/>
+              </article> */}
 
               </article>
             </div>

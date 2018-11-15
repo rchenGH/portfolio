@@ -9,8 +9,6 @@ import {
 
 import Bottombar from '../sidebar/Bottombar'
 
-
-
 class Footer extends Component {
 
   render() {
