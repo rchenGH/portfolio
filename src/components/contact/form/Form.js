@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import TextInput from './TextInput'
 
 const defaultFormValues = {
     name: null,
@@ -17,27 +16,53 @@ const defaultErrors = {
 
 class Form extends Component {
     constructor(props){
-        super();
+        super(props);
         this.state = {
             formValues: defaultFormValues,
             errors: defaultErrors,
         };
     }
 
-    handleTextParent = key => event => {
+    handleText = key => event => {
         const newValue = event.target.value;
         this.setState(oldState => ({
-            formValues: { ...oldState.formValues, [key]: newValue}
+          formValues: { ...oldState.formValues, [key]: newValue },
         }));
+      };
+
+    handleSubmit = event => {
+        const { errors } = this.state;
+        event.preventDefault();
     }
 
     render() {
         return (
             <div className="container">
                 <div className="row">
-                    <TextInput className="text-input"/>
-        
-                    <TextInput className="text-input"/>
+                    <div className="col-12 form-column">
+                        <input className="text-input contact-column" type="text" name="name" placeholder="NAME" onChange={this.handleText('name')}  />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12 form-column">
+                        <input className="text-input contact-column" type="text" name="email" placeholder="E-MAIL" onChange={this.handleText('email')}  />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12 form-column">
+                        <input className="text-input contact-column" type="text" name="phone" placeholder="PHONE" onChange={this.handleText('phone')}  />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12 form-column">
+                        <textarea className="text-input contact-column" type="text" name="comments" placeholder="COMMENTS" onChange={this.handleText('comments')}  />
+                    </div>
+                </div>
+                <br />
+                <div className="row">
+                    <div className="col-12 form-column form-label">
+                        <input className="submit-button contact-column form-label" type="submit" value="SUBMIT" onClick={this.handleSubmit} />
+                    </div>
                 </div>
             </div>
         );

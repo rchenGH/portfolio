@@ -51,13 +51,13 @@ class Contact extends Component {
                   </table>
                 </div>
 
-              {/* <br/>
+              <br/>
 
+              <h2 className="contact-header">INQUIRIES</h2>
               <hr className="contact-hr"/>
-
               <article>
                 <Form/>
-              </article> */}
+              </article>
 
               </article>
             </div>
