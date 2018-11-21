@@ -27,7 +27,10 @@ class App extends Component {
     this.state = {
       portfolio: {
         home: {
-          backend: null
+          backend: null,
+          deployment: null,
+          frontend: null,
+          testing: null,
         }
       },
     }
