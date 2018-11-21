@@ -19,14 +19,14 @@ class Contact extends Component {
             </div>
 
             <div className="column-10 column-body">
-              <article>
+              <article className="contact-container">
 
                 <h1 className="contact-header">CONTACT</h1>
 
                 <hr className="contact-hr"/>
 
 
-                <div className="container contact-container">
+                <div className="container">
                   <table className="contact-table">
                   <tbody>
                     <tr className="contact-row">
@@ -51,25 +51,21 @@ class Contact extends Component {
                   </table>
                 </div>
 
-              <br/>
+                <br/>
 
-              <h2 className="contact-header">INQUIRIES</h2>
-              <hr className="contact-hr"/>
-              <article>
-                <Form/>
-              </article>
+                <h2 className="contact-header">INQUIRIES</h2>
+                <hr className="contact-hr"/>
+                <article>
+                  <Form/>
+                </article>
 
               </article>
             </div>
           </div>
         </div>
-
       </div>
     );
   }
-
-
-
 }
 
 export default Contact;
