@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 const nameRegexValue = /^[a-zA-Z]+$/;
 const emailRegexValue = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 const phoneRegexValue = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+let validationErrors;
 
 class Form extends Component {
     constructor(props){
@@ -33,20 +34,30 @@ class Form extends Component {
     handleSubmit = event => {
         const { errors } = this.state;
         event.preventDefault();
-        if(this.validate() && errors.length === 0){
-            console.log('errors in handle submit ', errors)
-            alert("Form successfully submitted");
-        } else {
-            console.log('errors in handle submit, else ', errors)
-
-            alert("Form error, please correct.")
-        }
+        this.validate();
+            
+        this.setState(oldState => ({
+            error: { ...oldState.errors },
+          }), () => {
+              console.log(this.state.errors)
+              const { error } = this.state;
+              const noNullError =
+                    error.nameError === null && 
+                    error.emailError === null &&
+                    error.phoneError === null &&
+                    error.commentsError === null
+              if(noNullError){
+                  alert('Form successfully submitted!');
+              } else {
+                  alert('Form error, please correct.')
+              }
+          });
     }
 
     validationState = ( key, field ) => {
         this.setState(oldState => ({
             errors: { ...oldState.errors, [key]: field },
-        }));
+        }))
     };
 
     nonNullValidation(inputText) {
