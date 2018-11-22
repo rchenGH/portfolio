@@ -51,7 +51,6 @@ render(){
   //video iteration below provides links
   let videos = [cbrneVideo, hockeyVideo, mnsVideo, nexVideo]
 
-
   return (
     <article>
     <li className="project-item container">

@@ -9,7 +9,6 @@ render(){
 
   if(this.props.projects){
       portfolioItems = this.props.projects.map( project => {
-
         return (
           <PortfolioItem key={project.id} project={project}/>
         )

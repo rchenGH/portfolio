@@ -2,6 +2,19 @@
   position: relative;
 }
 
+.contact-container {
+    padding: 0px;
+    max-width: 1000px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height: 80vh;
+}
+
+.form-column{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact-header{
   color: rgba(255,255,255, 1);
   letter-spacing: 5px;
@@ -14,6 +27,13 @@
   animation-fill-mode: forwards;
   animation-play-state: running;
   animation-duration: 1.5s;
+}
+
+input[type="text"]::-webkit-input-placeholder, textarea[type="text"]::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.8em;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
 }
 
 @keyframes contact-header{
@@ -48,8 +68,7 @@
 
 .contact-column{
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto auto auto auto;
   font-size: 18px;
   letter-spacing: 2px;
   color: rgba(255,255,255,1);
@@ -59,12 +78,39 @@
   animation-fill-mode: forwards;
   animation-play-state: running;
   animation-duration: 1.5s;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 0 5px 0 5px;
 }
 
 .text-input{
-  background-color: rgba(127,127,127, 0.5);
+  height: 24px;
+  width: 300px;
+  margin: 10px auto 10px auto;
+  font-size: 14px;
+  background-color: rgba(50, 50, 50, 0.3);
+  font-weight: 300;
+  padding: 15px;
+  text-align: left;
+}
+
+textarea[type=text]{
+  height: 70px;
+}
+
+.submit-button{
+  height: 50px;
+  width: 330px;
+  text-align: center;
+  margin: 0 auto 100px auto;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0, 50, 150, 0.7);
+  font-weight: 300;
+  border: 1px rgba(0, 100, 200, 0.5) solid;
+  animation-name: contact-column;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 1.5s;
 }
 
 @keyframes contact-column{
@@ -100,15 +146,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .contact-row{
-
-  }
-
   .contact-column{
     font-size: 14px;
     max-width: auto;
-    width: 50px;
-    height: 50px;
   }
 
   .contact-icon img {
