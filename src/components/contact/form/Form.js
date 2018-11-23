@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const nameRegexValue = /^[a-zA-Z]+$/;
 const emailRegexValue = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-const phoneRegexValue = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+const phoneRegexValue = /^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$/;
 let validationErrors;
 
 class Form extends Component {
@@ -35,20 +35,26 @@ class Form extends Component {
         const { errors } = this.state;
         event.preventDefault();
         this.validate();
-            
         this.setState(oldState => ({
             error: { ...oldState.errors },
           }), () => {
-              console.log(this.state.errors)
-              const { error } = this.state;
-              const noNullError =
-                    error.nameError === null && 
-                    error.emailError === null &&
-                    error.phoneError === null &&
-                    error.commentsError === null
+                const { error } = this.state;
+                const noNullError =
+                        error.nameError === null && 
+                        error.emailError === null &&
+                        error.phoneError === null &&
+                        error.commentsError === null;
+                const errorOwnProp = Object.getOwnPropertyNames(error);
+                const errorValues = Object.values(error);
+                // for(let i = 0; i <= errorOwnProp; i++){
+                //     if(errorOwnProp)
+                // }
               if(noNullError){
+                  console.log('length upon success ', errorOwnProp.value)
                   alert('Form successfully submitted!');
               } else {
+                console.log('length upon fail ', errorValues)
+
                   alert('Form error, please correct.')
               }
           });
@@ -77,37 +83,37 @@ class Form extends Component {
     }
 
     lengthValidation = inputComment => {
-        return !inputComment.length >= 6
+        return inputComment.length <= 6
     }
 
     nameValidation = inputName => {
         if(this.nonNullValidation(inputName)) {
             if(this.nameRegValidation(inputName)){
-                return "Must not contain special characters or numbers.";
+                return "NAME MUST NOT CONTAIN SPECIAL CHARACTERS OR NUMBERS";
             } else {
                 return null;
             }
         } else {
-            return 'Name is required'
+            return 'NAME IS REQUIRED'
         }
     }
 
     emailValidation = inputEmail => {
         if (this.nonNullValidation(inputEmail)) {
             if(this.emailRegValidation(inputEmail)){
-                return "Not a valid email address."
+                return "NOT A VALID EMAIL ADDRESS"
             } else {
                 return null
             }
         } else {
-            return 'Email is required.'
+            return 'EMAIL IS REQUIRED'
         }
     }
 
     phoneValidation = inputPhone => {
         if (this.nonNullValidation(inputPhone)){
             if(this.phoneRegValidation(inputPhone)){
-                return "Not a valid phone number."
+                return "NOT A VALID PHONE NUMBER"
             } else {
                 return null;
             }
@@ -119,12 +125,12 @@ class Form extends Component {
     commentValidation = inputComment => {
         if(this.nonNullValidation(inputComment)){
             if(this.lengthValidation(inputComment)){
-                return "Your comment must be at least 6 characters long."
+                return "MUST BE AT LEAST 6 CHARACTERS LONG"
             } else {
                 return null;
             }
         } else {
-            return 'Comment is required';
+            return 'COMMENT IS REQUIRED';
         }
     }
     
@@ -164,28 +170,28 @@ class Form extends Component {
             <article className="container">
                 <div className="row">
                     <div className="col-12 form-column">
-                        <span>{errors.nameError}</span>
-                        <br/>
+                        <span className="error-line">{errors.nameError}</span>
+                        <br />
                         <input className="text-input contact-column" type="text" name="name" placeholder="NAME" onChange={this.handleText('name')}  />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-12 form-column">
-                        <span>{errors.emailError}</span>
+                        <span className="error-line">{errors.emailError}</span>
                         <br/>
                         <input className="text-input contact-column" type="text" name="email" placeholder="E-MAIL" onChange={this.handleText('email')}  />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-12 form-column">
-                        <span>{errors.phoneError}</span>
+                        <span className="error-line">{errors.phoneError}</span>
                         <br/>
                         <input className="text-input contact-column" type="text" name="phone" placeholder="PHONE (OPTIONAL)" onChange={this.handleText('phone')}  />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-12 form-column">
-                        <span>{errors.commentsError}</span>
+                        <span className="error-line">{errors.commentsError}</span>
                         <br/>
                         <textarea className="text-input contact-column" type="text" name="comments" placeholder="COMMENTS" onChange={this.handleText('comments')}  />
                     </div>

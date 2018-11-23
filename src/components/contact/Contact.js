@@ -22,9 +22,7 @@ class Contact extends Component {
               <article className="contact-container">
 
                 <h1 className="contact-header">CONTACT</h1>
-
                 <hr className="contact-hr"/>
-
 
                 <div className="container">
                   <table className="contact-table">
