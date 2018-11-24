@@ -82,9 +82,9 @@ input[type="text"]::-webkit-input-placeholder, textarea[type="text"]::-webkit-in
 }
 
 .text-input{
-  height: 24px;
+  height: 20px;
   width: 300px;
-  margin: 10px auto 10px auto;
+  margin: 5px auto 10px auto;
   font-size: 14px;
   background-color: rgba(50, 50, 50, 0.3);
   font-weight: 300;
@@ -138,6 +138,14 @@ textarea[type=text]{
   animation-fill-mode: forwards;
   animation-play-state: running;
   animation-duration: 1.5s;
+}
+
+.error-line {
+  color: rgba(255,0,0,1);
+  letter-spacing: 3px;
+  font-size: 10px;
+  height: 12px;
+
 }
 
 @keyframes contact-hr{
