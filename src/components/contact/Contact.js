@@ -33,17 +33,17 @@ class Contact extends Component {
                       </td>
                       <td className="contact-column">Raymond Chen</td>
                     </tr>
-                    <tr className="contact-row">
+                    {/* <tr className="contact-row">
                       <td className="contact-icon">
                         <img src={phoneIcon}/>
                       </td>
-                      <td className="contact-column">778-996-8813</td>
-                    </tr>
+                      <td className="contact-column"></td>
+                    </tr> */}
                     <tr className="contact-row">
                       <td className="contact-icon">
                         <img src={emailIcon}/>
                       </td>
-                      <td className="contact-column">raymondchen86@hotmail.com</td>
+                      <td className="contact-column">rcshaw86@gmail.com</td>
                     </tr>
                     </tbody>
                   </table>
