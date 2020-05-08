@@ -13,7 +13,6 @@ class Home extends Component {
             <div className="column-2 sidebar-column">
               <Sidebar/>
             </div>
-
             <div className="column-10 column-body">
               <article>
                 <HomeItem home={this.props.home}/>
