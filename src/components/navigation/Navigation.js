@@ -29,7 +29,6 @@ class NavigationBar extends Component {
     }
 
     closeMenu(event){
-
       if(!this.dropdownMenu.contains(event.target)){
         this.setState(
           { showMenu: false },
@@ -66,8 +65,6 @@ class NavigationBar extends Component {
                   ABOUT
                 </li>
               </Link>
-
-
               <Link to="/home">
                 <li className="navigation-expanded-list-item">
                   HOME
